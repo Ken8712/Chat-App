@@ -13,7 +13,7 @@ class MessagesController < ApplicationController
       @messages = @room.messages.includes(:user)
       render :index, status: :unprocessable_entity
     end
-    # binding.pry
+    binding.pry
   end
 
   private
