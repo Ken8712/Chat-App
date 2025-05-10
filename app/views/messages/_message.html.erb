@@ -1,0 +1,18 @@
+<div class="message">
+  <div class="main__middle-metadata">
+    <div class="main__middle-metadata-name">
+      <%= message.user.name %>
+    </div>
+    <div class="main__middle-metadata-date">
+      <!-- 投稿した時刻を出力する -->
+      <%= l message.created_at %>
+
+    </div>
+  </div>
+  <div class="lower-message">
+    <div class="main__middle-message">
+      <%= message.content %>
+      
+    </div>
+  </div>
+</div>
