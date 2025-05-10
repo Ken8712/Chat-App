@@ -1,3 +1,5 @@
+<!- ========== _main_chat ============== >
+
 <div class="main__upper">
   <div class="main__upper-roomname"><%= @room.name %></div>
   <div class="main__upper-roomexit">
@@ -10,17 +12,7 @@
 
 <div class="main__middle">
 
-  <div class="main__middle-metadata">
-    <div class="main__middle-metadata-name">Tom</div>
-    <div class="main__middle-metadata-date">2020/3/31(Wed) 12:43:30</div>
-  </div>
-  <div class="main__middle-message">おはよう</div>
-
-  <div class="main__middle-metadata">
-    <div class="main__middle-metadata-name">Tom</div>
-    <div class="main__middle-metadata-date">2020/3/31(Wed) 12:43:30</div>
-  </div>
-  <div class="main__middle-message">おはよう</div>
+  <%= render partial: 'message', collection: @messages %>
 
 </div>
 
